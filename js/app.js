@@ -18,13 +18,13 @@ function calcInsurance(age, hp, name, country) {
 				if (country = "austria") {
 					document.getElementById("output-calc").innerHTML = baseCost + 50;
 				}  
-				if (country = "hungary") {
+				else if (country == "hungary") {
 					document.getElementById("output-calc").innerHTML = baseCost + 100;
 				}  
-				if (country = "greece") {
+				else if (country = "greece") {
 					document.getElementById("output-calc").innerHTML = baseCost + 150;
 				}  
-				if (country = "Other") { 
+				else if (country = "other") { 
 					document.getElementById("output-calc").innerHTML = "<span class='sorryCant'> Sorry, " + name + " we can only give custom quotes for Austria, Hungary and Greece. </span>";
 				} 
 				else {

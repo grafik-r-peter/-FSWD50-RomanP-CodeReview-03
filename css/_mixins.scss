@@ -1,0 +1,12 @@
+
+
+@mixin flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
+@mixin wrap {
+	width: 75%;
+    max-width: 850px;
+    margin: 0 auto;
+}
