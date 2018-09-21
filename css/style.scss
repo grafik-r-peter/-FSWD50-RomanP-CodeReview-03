@@ -1,0 +1,115 @@
+// IMPORT PARTIALS
+@import "variables";
+
+// IMPORT FONT
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700');
+
+
+
+	
+///// STYLESHEET /////
+
+
+
+/// BASIC ///
+
+#wrapper {
+	width:100%;
+	margin: 0 auto;
+	max-width: 1024px;
+}
+
+
+
+/// HEADER ///
+
+#top-header { 
+	background: $compl-color;
+	padding: 15px 20px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	}
+
+ 
+
+
+// NAVI // 
+
+nav {
+	.mainnav {
+	  list-style: none;
+	  margin: 0; 
+	  padding: 0;
+	  background: $prim-color;
+	  display: flex;
+	  justify-content: flex-start;
+	  font: 700 1.2em $font-stack;
+	}
+
+	.mainnav a {
+	  text-decoration: none;
+	  display: block;
+	  padding: 7px;
+	  color: #fff;
+	}
+
+	.mainnav a:hover {
+	  background: $compl-color;
+	  color: $prim-color;
+	}
+}
+
+@media all and (max-width: 600px) {    /* navi becoming centered and vertical */
+  .mainnav {
+    justify-content: center;   
+  }
+
+  .mainnav a { 
+    text-align: center; 
+    padding: 4px;
+    font-size: 0.8em;
+  }
+}
+
+
+// CONTENT //
+
+
+
+
+// FOOTER //
+
+footer {
+  background: #000;
+  padding: 15px 20px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#footernav { 
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  font: 400 1.2em $font-stack;
+
+
+	a {
+	  text-decoration: none;
+	  display: block;
+	  padding: 7px;
+	  color: #fff;
+	} 
+}
+
+.footer-logo {
+  margin-left: auto;
+}
+
+.copyright {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+}

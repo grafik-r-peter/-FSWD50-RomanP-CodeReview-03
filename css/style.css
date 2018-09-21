@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700");
+#wrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px; }
+
+#top-header {
+  background: #FFF3F3;
+  padding: 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+nav .mainnav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #8E1616;
+  display: flex;
+  justify-content: flex-start;
+  font: 700 1.2em "Nanum Gothic", sans-serif; }
+nav .mainnav a {
+  text-decoration: none;
+  display: block;
+  padding: 7px;
+  color: #fff; }
+nav .mainnav a:hover {
+  background: #FFF3F3;
+  color: #8E1616; }
+
+@media all and (max-width: 600px) {
+  /* navi becoming centered and vertical */
+  .mainnav {
+    justify-content: center; }
+
+  .mainnav a {
+    text-align: center;
+    padding: 4px;
+    font-size: 0.8em; } }
+footer {
+  background: #000;
+  padding: 15px 20px 15px;
+  display: flex;
+  flex-direction: column; }
+
+#footernav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  font: 400 1.2em "Nanum Gothic", sans-serif; }
+  #footernav a {
+    text-decoration: none;
+    display: block;
+    padding: 7px;
+    color: #fff; }
+
+.footer-logo {
+  margin-left: auto; }
+
+.copyright {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
