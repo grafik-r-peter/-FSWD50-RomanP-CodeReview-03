@@ -18,7 +18,7 @@ function calcInsurance(age, hp, name, country) {
 				if (country = "austria") {
 					document.getElementById("output-calc").innerHTML = baseCost + 50;
 				}  
-				else if (country == "hungary") {
+				else if (country = "hungary") {
 					document.getElementById("output-calc").innerHTML = baseCost + 100;
 				}  
 				else if (country = "greece") {
