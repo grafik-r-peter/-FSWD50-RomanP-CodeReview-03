@@ -1,0 +1,12 @@
+BUGS: 
+
+- Uncaught TypeError: Cannot read property 'image' of undefined
+	// but everything works!?
+
+
+- background image url is compiled wrong 
+	// no idea how to fix this
+
+
+- when working with my external mixins file koala is crashing windows.
+	// loads of processes 'ruby.exe' some kind of import loop?

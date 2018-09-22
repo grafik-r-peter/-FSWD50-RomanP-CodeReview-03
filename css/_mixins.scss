@@ -11,7 +11,11 @@
     margin: 0 auto;
 }
 
-@mixin reset-spaces {
+@mixin resetContainer {
 	width: 100%;
-	padding: 5%;
+	justify-content:center;
+}
+
+@mixin resetContent {
+	width: 90%;
 }

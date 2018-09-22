@@ -1,6 +1,7 @@
 
-function calcInsurance(age, hp, name, country) { //
-	
+// QUOTE CALCULATOR
+
+function calcInsurance(age, hp, name, country) { 
 	age = document.getElementById("getAge").value;
 	hp = document.getElementById("getHP").value;
 	name = document.getElementById("getName").value;
@@ -13,12 +14,10 @@ function calcInsurance(age, hp, name, country) { //
 	 	var cost = function() {    // calculating cost for each country
 				var a = (hp * 100 / age) + Number(country);
 				a = Math.round(a);
-				document.getElementById("output-calc").innerHTML = "Hey " + name + ", here's your quote: <br>" + a;
+				document.getElementById("output-calc").innerHTML = "Hey " + name + ", this is your calculated price: <br> € " + a;
 			}
 		cost()
 	}
 }
 
 document.getElementById("submit").addEventListener("click", calcInsurance);
-
-
