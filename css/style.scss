@@ -27,6 +27,14 @@ h1 {
 	font-size: 42px;
 }
 
+h2 {
+	font-size: 34px;
+}
+
+.small-printed {
+	font-size: 0.8em;
+}
+
 
 
 /// HEADER ///
@@ -87,6 +95,11 @@ nav {
 
 // CONTENT //
 
+#first-hl {
+	padding: 20px 0 10px 0;
+	color:#fff;
+}
+
 #content-wrapper {
 	background: url("img/traffic-332857_1920.jpg") no-repeat fixed top;
 	-webkit-background-size: cover;
@@ -97,36 +110,60 @@ nav {
 
 .content-container {
 	@include wrap;
+	padding: 15px 0;
 }
 
 .content-container-2 {
 	background: #fff;
+	padding: 20px;
 }
 
 .col-2-flex {
 	@include wrap;
+	display:flex;
+	justify-content: center;
+	justify-content: space-around;
+    flex-wrap: wrap;
+    	ul {
+    		list-style-type:none;
+    		margin:1em;
+    		padding:0;
+    	}
+
+}
+
+.col-1_2-flex {
+	width: 40%;
+	border-top: 2px solid #000;
+    padding: 20px;
+	-webkit-box-shadow: 0px 2px 3px 0px rgba(50, 50, 50, 0.9);
+	-moz-box-shadow:    0px 2px 3px 0px rgba(50, 50, 50, 0.9);
+	box-shadow:         0px 2px 3px 0px rgba(50, 50, 50, 0.9);
 }
 
 .banner-container {
 	background: #CECECE;
+	margin-top: -60px;
+    padding: 60px 0 10px;
 }
 
 .banner {
 	@include wrap;
+	text-align:center;
+	width: 50%;
+		h2 {
+		color: #000;
+		}
+		p { font-size:1.5em;
+		}
 }
-
-h2.first-hl {
-	color:#fff;
-	margin:0;
-	padding: 10px 0 
-}
-
 
 
 // FORM // 
 
 #calc-container {
-	background: rgba(255,255,255,0.9);
+	position: relative;
+	background: rgba(255,255,255,0.8);
 	padding: 15px 15%;
 	text-align:center;
 	border-style: solid;
@@ -176,6 +213,10 @@ form button {
     cursor: pointer;
 }
 
+#output-calc {
+	min-height: 40px;
+}
+
 
 
 // FOOTER //
@@ -218,4 +259,14 @@ footer {
   font-size: 0.9em;
   color: #fff;
   text-align: center;
+}
+
+
+
+// MEDIA QUERIES //
+
+@media only screen and (max-width:37.5em) { 
+	#top-header, .mainnav, .content-container, .col-2-flex, #footer-container {
+		@include reset-spaces;
+	}
 }

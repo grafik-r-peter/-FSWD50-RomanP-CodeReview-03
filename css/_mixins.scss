@@ -10,3 +10,8 @@
     max-width: 850px;
     margin: 0 auto;
 }
+
+@mixin reset-spaces {
+	width: 100%;
+	padding: 5%;
+}

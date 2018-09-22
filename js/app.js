@@ -1,6 +1,5 @@
 
-
-function calcInsurance(age, hp, name, country) {
+function calcInsurance(age, hp, name, country) { //
 	
 	age = document.getElementById("getAge").value;
 	hp = document.getElementById("getHP").value;
@@ -11,10 +10,10 @@ function calcInsurance(age, hp, name, country) {
 		alert("Sorry, we need you to give us some info about you.");
 	
 	} else {
-		var cost = function() {    // calculating cost for each country
-			//	console.log(country);		
+	 	var cost = function() {    // calculating cost for each country
 				var a = (hp * 100 / age) + Number(country);
-				document.getElementById("output-calc").innerHTML = a;
+				a = Math.round(a);
+				document.getElementById("output-calc").innerHTML = "Hey " + name + ", here's your quote: <br>" + a;
 			}
 		cost()
 	}
