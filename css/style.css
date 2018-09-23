@@ -197,6 +197,18 @@ form button:hover {
 #output-calc {
   min-height: 40px; }
 
+  .price {
+    background-color: #8E1616;
+    color: white;
+    font-size: 1.5em;
+    line-height: 2.5em;
+    font-weight: 700;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+  }
+
 footer {
   background: #000; }
 

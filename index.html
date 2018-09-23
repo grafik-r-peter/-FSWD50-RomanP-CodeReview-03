@@ -53,9 +53,9 @@
 								<span>Age:  <br><input type="number" id="getAge"></span>
 								<span>Country:<br>
 								<select id="getCountry"> 
-									<option id="austria" value="50">Austria</option>
-									<option id="hungary" value="100">Hungary</option>
-									<option id="greece" value="150">Greece</option>
+									<option id="austria" value="(hp * 100 / age) + 50;">Austria</option>
+									<option id="hungary" value="(hp * 120 / age) + 100">Hungary</option>
+									<option id="greece" value="(hp * 150 / (age + 3)) + 150">Greece</option>
 						<!--			<option id="otherCountry" value="other">Other</option> -->
 								</select></span>
 								<span>Horsepower of your car:<br> <input type="number" id="getHP"></span>

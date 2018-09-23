@@ -12,9 +12,10 @@ function calcInsurance(age, hp, name, country) {
 	
 	} else {
 	 	var cost = function() {    // calculating cost for each country
-				var a = (hp * 100 / age) + Number(country);
+				var a = eval(country);
 				a = Math.round(a);
-				document.getElementById("output-calc").innerHTML = "Hey " + name + ", this is your calculated price: <br> € " + a;
+				document.getElementById("output-calc").innerHTML = "Hey " + name + ", this is your calculated price: <br><span class='price'> € " + 
+																	a + "</span>";
 			}
 		cost()
 	}
